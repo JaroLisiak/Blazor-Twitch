@@ -1,0 +1,9 @@
+﻿.twitch {
+    background-color: #6441A5;
+    color: #FFF;
+    border-radius: 6px;
+}
+.twitch:hover {
+    background-color: #3B2064;
+    color: #FFF;
+}

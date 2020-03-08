@@ -1,0 +1,25 @@
+﻿@page "/loginControl"
+
+@using System.Web;
+
+<AuthorizeView>
+    <Authorized>
+        <b>Hello, @context.User.Identity.Name!</b>
+
+        <a class="ml-md-auto btn btn-primary" href="/logout" target="_top">Logout</a>
+    </Authorized>
+
+    <NotAuthorized>
+
+        @*<NavLink href="/login">Connect with Twitch</NavLink>*@
+
+        @*<a class="ml-sm-auto btn btn-primary" style="background-color: #6441A5;" href="/login?" target="_top">Connect with Twitch</a>*@
+
+        <form action="/login">
+            <button class="btn m-2 twitch" type="submit">Connect with Twitch</button>
+        </form>
+
+
+    </NotAuthorized>
+
+</AuthorizeView>
